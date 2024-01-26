@@ -24,13 +24,15 @@ Users should be able to:
 ## Screenshots
 
 ### Mobile Version
+![iPhone SE-1706273057271](https://github.com/santanavanessa/intro-component-with-signup-form-master/assets/48105425/1ef4c815-3314-467c-9b5e-63469882bb8f)
 
 ### Desktop Version
+![Desktop Device-1706273042199](https://github.com/santanavanessa/intro-component-with-signup-form-master/assets/48105425/025ad0df-7ed3-44db-8a85-a325cf4f8275)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://intro-component-with-signup-form-master-green-nine.vercel.app/](https://your-live-site-url.com)
 
 ## My process
 
