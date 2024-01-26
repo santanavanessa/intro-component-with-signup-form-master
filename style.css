@@ -1,0 +1,267 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* General Styling */
+
+body {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: var(--red);
+  min-height: 100vh;
+  place-items: center;
+  margin: 0 auto;
+  padding: 4rem 0 4rem;
+}
+
+h1,
+p {
+  color: var(--white);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  margin: 2.4rem 0 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header {
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header p {
+  font-weight: 500;
+}
+
+.info,
+.signup-form {
+  margin: 0 1.5rem 1.5rem;
+  box-shadow: 0px 10px rgba(62, 60, 73, 0.2);
+  border-radius: 0.5rem;
+}
+
+.info {
+  display: block;
+  background-color: var(--blue);
+  text-align: center;
+  font-weight: 400;
+  padding: 1.2rem 4rem;
+  color: var(--white);
+}
+
+.info b {
+  font-weight: 600;
+}
+
+.signup-form > * + * {
+  margin-top: 1rem;
+}
+
+.signup-form {
+  background-color: var(--white);
+  padding: 2rem 1.5rem 0.8rem;
+  height: 34rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.signup-form input {
+  width: 100%;
+  height: 3.4rem;
+  padding: 0 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  border: 0.1px solid var(--grayish-blue);
+  color: var(--dark-blue);
+}
+
+input:focus {
+  outline: 0.2px solid var(--dark-blue);
+  border: none;
+}
+
+.error-icon {
+  position: absolute;
+  display: none;
+  margin: auto;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.alert {
+  display: none;
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+  color: var(--red);
+}
+
+.signup-form button {
+  width: 100%;
+  height: 3.4rem;
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 500;
+  border: none;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  box-shadow: inset 0px -3px rgb(62 60 73 / 21%),
+    inset 0px 1px 2px rgb(62 60 73 / 21%);
+  cursor: pointer;
+  line-height: 2rem;
+  letter-spacing: 0.055rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-form button:hover {
+  background-color: hsla(154, 59%, 51%, 70%);
+}
+
+.terms {
+  font-size: 0.2rem;
+}
+
+.terms p {
+  display: block;
+  color: var(--grayish-blue);
+  font-size: 0.75rem;
+  padding: 0 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+}
+
+.terms b {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.block {
+  display: block !important;
+}
+
+.errInput {
+  border-color: var(--red) !important;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 2rem 6rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 0.5rem;
+    max-height: 100vh;
+    place-content: center;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  header h1,
+  header p {
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  header p {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .signup-form {
+    height: 36rem;
+    padding: 3rem;
+  }
+
+  .signup-form input {
+    height: 4rem;
+    padding: 0 3rem;
+  }
+
+  .error-icon {
+    right: 2rem;
+  }
+}
