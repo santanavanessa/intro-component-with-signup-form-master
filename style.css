@@ -63,7 +63,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url(./images/bg-intro-mobile.png);
   background-color: var(--red);
-  min-height: 100vh;
+  min-height: 100dvh;
   place-items: center;
   margin: 0 auto;
   padding: 4rem 0 4rem;
@@ -103,7 +103,6 @@ header p {
 
 .info,
 .signup-form {
-  margin: 0 1.5rem 1.5rem;
   box-shadow: 0px 10px rgba(62, 60, 73, 0.2);
   border-radius: 0.5rem;
 }
@@ -115,6 +114,7 @@ header p {
   font-weight: 400;
   padding: 1.2rem 4rem;
   color: var(--white);
+  margin: 0 1.5rem 1.5rem;
 }
 
 .info b {
@@ -127,8 +127,8 @@ header p {
 
 .signup-form {
   background-color: var(--white);
-  padding: 2rem 1.5rem 0.8rem;
-  height: 34rem;
+  padding: 2rem 1.5rem 0.01rem;
+  margin: 0  1.5rem;
 }
 
 .input-container {
@@ -137,8 +137,7 @@ header p {
 
 .signup-form input {
   width: 100%;
-  height: 3.4rem;
-  padding: 0 1rem;
+  padding: 1rem;
   font-weight: 600;
   border-radius: 0.3rem;
   border: 0.1px solid var(--grayish-blue);
@@ -228,7 +227,6 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
     gap: 0.5rem;
-    max-height: 100vh;
     place-content: center;
   }
 
@@ -252,13 +250,11 @@ input:focus {
   }
 
   .signup-form {
-    height: 36rem;
-    padding: 3rem;
+    padding: 3rem 3rem 0.1rem;
   }
 
   .signup-form input {
-    height: 4rem;
-    padding: 0 3rem;
+    padding: 1rem;
   }
 
   .error-icon {
